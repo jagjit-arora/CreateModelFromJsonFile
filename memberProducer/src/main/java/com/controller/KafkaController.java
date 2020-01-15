@@ -20,6 +20,7 @@ public class KafkaController {
 	@GetMapping("/produce")
 	public String producer(@RequestParam("message") String message) throws Exception {
 		producer.read();
+		producer.test();
 		return "this is the message:"+message;
 	}
 	
